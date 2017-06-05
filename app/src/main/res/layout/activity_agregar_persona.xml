@@ -44,10 +44,10 @@
 
         <Button
             android:id="@+id/btnBuscar"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="buscar"
-            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:text="@string/buscar" />
 
         <android.support.design.widget.TextInputLayout
@@ -59,7 +59,8 @@
                 android:id="@+id/txtpiso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Piso" />
+                android:hint="@string/Piso"
+                android:inputType="number" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -72,7 +73,8 @@
                 android:id="@+id/txtprecio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Precio" />
+                android:hint="@string/Precio"
+                android:inputType="number" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -85,7 +87,8 @@
                 android:id="@+id/txtmetroscuadrados"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/metro_cuadrado" />
+                android:hint="@string/metro_cuadrado"
+                android:inputType="number" />
 
         </android.support.design.widget.TextInputLayout>
 

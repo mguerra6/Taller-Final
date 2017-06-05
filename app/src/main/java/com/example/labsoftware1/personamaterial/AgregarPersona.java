@@ -98,8 +98,9 @@ public class AgregarPersona extends AppCompatActivity {
         return fotos[numero];
     }
     public void guardar(View v)  {
-        String urlfoto, idfoto, nomenclatura, precio, piso, metrocuadrado;
+        String urlfoto, idfoto, nomenclatura, metrocuadrado, precio, piso, balcom = "",sombra = "";
         Apartamento p;
+
         int foto;
 
         if(validarTodo()){
@@ -120,8 +121,16 @@ public class AgregarPersona extends AppCompatActivity {
             }catch (Exception e){
 
             }
-                idfoto=String.valueOf(foto);
-            p = new Apartamento(urlfoto, idfoto, nomenclatura, precio, piso, metrocuadrado);
+
+            if(chkbalcon.isChecked()){
+                balcom = getResources().getString(R.string.balcon);
+            }
+            if(chksombra.isChecked()){
+                sombra = getResources().getString(R.string.sombra);
+            }
+
+            idfoto=String.valueOf(foto);
+            p = new Apartamento(urlfoto, idfoto, nomenclatura, precio, piso, metrocuadrado,balcom, sombra);
             p.guardar(getApplicationContext());
 
             InputMethodManager imp =(InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -132,6 +141,8 @@ public class AgregarPersona extends AppCompatActivity {
 
         }
     }
+
+
 
     public void limpiar(){
         cajanomenclatura.setText("");
@@ -144,6 +155,11 @@ public class AgregarPersona extends AppCompatActivity {
 
         guardado = false;
     }
+
+    public void limpiar(View v){
+        limpiar();
+    }
+
 
 
     public boolean validarTodo(){
