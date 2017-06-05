@@ -161,6 +161,34 @@ public class AgregarPersona extends AppCompatActivity {
     }
 
 
+    public boolean validarNomenclatura() {
+        if (cajanomenclatura.getText().toString().isEmpty()) {
+            cajanomenclatura.setError(this.getResources().getString(R.string.error_1));
+            cajanomenclatura.requestFocus();
+            return false;
+        }
+        return true;
+    }
+
+
+    public void buscar(View v){
+        Apartamento p;
+        String balcom, sombra;;
+        if(validarNomenclatura()) {
+            p = Datos.buscarApartamento(getApplicationContext(), cajanomenclatura.getText().toString());
+            if(p!=null){
+                cajametrocuadrado.setText(p.getMetrocuadrado());
+                cajaprecio.setText(p.getPrecio());
+                cajapiso.setText(p.getPiso());
+                balcom = p.getBalcom();
+                if(balcom.contains(getResources().getString(R.string.balcon))) chkbalcon.setChecked(true);
+                sombra = p.getSombra();
+                if(sombra.contains(getResources().getString(R.string.sombra))) chksombra.setChecked(true);
+            }
+        }
+    }
+
+
 
     public boolean validarTodo(){
         if(cajanomenclatura.getText().toString().isEmpty()){
