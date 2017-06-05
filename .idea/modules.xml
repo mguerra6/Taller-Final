@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PersonaMaterial.iml" filepath="$PROJECT_DIR$/PersonaMaterial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PersonasMaterial-53ce3f0c9d23500b927ae5888414353bd1e61b52.iml" filepath="$PROJECT_DIR$/PersonasMaterial-53ce3f0c9d23500b927ae5888414353bd1e61b52.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

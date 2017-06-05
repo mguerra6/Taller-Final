@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Altos del Algoritmo</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="cedula">Cédula</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="guardar">Guardar</string>
+    <string name="mensaje_error_cedula">Digite la cédula</string>
+    <string name="mensaje_error_nombre">Digite el nombre</string>
+    <string name="mensaje_error_apellido">Digite el apellido</string>
+    <string name="mensaje_exitoso_guardar">Apartamento Guardado Exitosamente !!</string>
+
+    <string name="Nomenclatura">nomenclatura</string>
+    <string name="Piso">piso</string>
+    <string name="Precio">precio</string>
+    <string name="Mts2">metros_cuadrados</string>
+    <string name="metro_cuadrado">Metros cuadrados</string>
+    <string name="balcon">Balcon</string>
+    <string name="sombra">Sombra</string>
+    <string name="registrar">Registrar</string>
+    <string name="numero">No</string>
+    <string name="repote_1">apartamentos se encuentran en la sombra y tienen balcon</string>
+    <string name="reporte_2">Piso en el cual se encuentre el apartamento más caro del edificio</string>
+    <string name="reporte_3">Nomenclatura y metros cuadrados del apartamento con mayor tamaño en todo el edificio</string>
+    <string name="reporte_5">Promedio de tamaño de los apartamentos por Piso </string>
+    <string name="registro">Registro</string>
+    <string name="listadoregistro">Listado registro</string>
+    <string name="reporte">Reporte</string>
+    <string name="borrar">Borrar</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="buscar">Buscar</string>
+    <string-array name="opciones">
+        <item>@string/registro</item>
+        <item>@string/listadoregistro</item>
+        <item>@string/reporte</item>
+    </string-array>
+    <string name="error_1">Digite la nomenclatura</string>
+    <string name="error_2">Digite el precio</string>
+    <string name="error_3">Digite el piso</string>
+    <string name="error_4">Digite los metros cuadrados</string>
+    <string name="mens_1">Apartamento Guardado Exitosamente</string>
+    <string name="mens_mod">Apartamento Modificada Exitosamente</string>
+    <string name="confirmar">Confirmación</string>
+    <string name="conf_eliminar">¿Está seguro que desea eliminar este apartamento?</string>
+    <string name="apartamento_eliminado">Apartamento Eliminado Exitosamente</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="promedio">Promedio</string>
+    <string name="confir_elim_apart">Apartamento Eliminado Exitosamente</string>
+
+</resources>
