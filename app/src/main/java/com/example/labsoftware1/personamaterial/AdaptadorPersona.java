@@ -64,10 +64,10 @@ public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.Pers
         public PersonaViewHolder(View itemView) {
             super(itemView);
             view= itemView;
-            foto = (ImageView)itemView.findViewById(R.id.foto);
-            nomenclatura = (TextView)itemView.findViewById(R.id.txtCedulaP);
-            precio = (TextView) itemView.findViewById(R.id.txtNombreP);
-            metrocuadrado = (TextView)itemView.findViewById(R.id.txtApellidoP);
+            foto = (ImageView)itemView.findViewById(R.id.fotoPersona);
+            nomenclatura = (TextView)itemView.findViewById(R.id.txtNomenclaturaP);
+            precio = (TextView) itemView.findViewById(R.id.txtPrecioP);
+            metrocuadrado = (TextView)itemView.findViewById(R.id.txtmetroscuadrados);
         }
     }
 
